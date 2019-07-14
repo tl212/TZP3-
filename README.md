@@ -46,7 +46,7 @@ At first, we explored a hybrid of movie popularity with only users that have rat
 <img src="img/rec-systems.png">
 </p>
 
-##### [Content-Based](https://github.com/zeexav/TZP3/blob/master/testenv/ContentSys.ipynb) 
+##### [Content-Based](https://github.com/tl212/TZP3-1.5/blob/master/Engines/ContentSys.ipynb) 
 
 Click on the link for our content based recoSys
 
@@ -61,7 +61,7 @@ The Collaborative Filtering Recommender is entirely based on the past behavior a
 For instance, if user A likes movies 1, 2, 3 and user B likes movies 2,3,4, then they have similar interests and A should like movie 4 and B should like movie 1. This makes it one of the most commonly used algorithm as it is not dependent on any additional information.
 In general, collaborative filtering is the workhorse of recommender engines. The algorithm has a very interesting property of being able to do feature learning on its own, which means that it can start to learn for itself what features to use. It can be divided into Memory-Based Collaborative Filtering and Model-Based Collaborative filtering. In this post, I'll only focus on the Memory-Based Collaborative Filtering technique.
 
-##### ii. [Implementing SVD - Singular Value Decomposition](https://github.com/zeexav/TZP3/blob/master/testenv/Ratings.ipynb)
+##### ii. [Implementing SVD - Singular Vector Decomposition](https://github.com/tl212/TZP3-1.5/blob/master/Engines/SVD.ipynb)
 
 Click on the link for our repository. 
 
@@ -88,11 +88,11 @@ where A is the input data matrix (users's ratings), U is the left singular vecto
 
 To get the lower rank approximation, I take these matrices and keep only the top k features, which can be thought of as the underlying tastes and preferences vectors.
 
-### 5. [Hybrid RecoSys Engine](https://github.com/zeexav/TZP3/blob/master/testenv/Hybrid.ipynb)
+### 5. [Hybrid RecoSys Engine](https://github.com/tl212/TZP3-1.5/blob/master/Engines/Hybrid.ipynb)
 
 Click on the link for our repository. 
 
-Welcome to the last part of the project. Here we were able to join both systems combining both features. 
+
 
 
 
