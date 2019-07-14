@@ -32,8 +32,8 @@ def send():
         user = request.form['userId']
         user = int(user)
         
-        data = pd.read_csv('Data/movies_bow.csv')
-        movies = pd.read_csv('Data/movies_sml.csv')
+        data = pd.read_csv('../Data/movies_bow.csv')
+        movies = pd.read_csv('../Data/movies_sml.csv')
         print(os.getcwd())
         #Begin Content Filtering process
         indices = pd.Series(data.index, index=data['Title'])
@@ -48,8 +48,8 @@ def send():
         content_results = pd.DataFrame(data['movieId'].iloc[movie_indices])
 
         # files for collaborative filtering model
-        ratings = pd.read_hdf('Data/ratings_hdf.h5')
-        preds = pd.read_hdf('Data/predsfin_hdf.h5')
+        ratings = pd.read_hdf('../Data/ratings_hdf.h5')
+        preds = pd.read_hdf('../Data/predsfin_hdf.h5')
 
         #begin collaborative filtering process
         
