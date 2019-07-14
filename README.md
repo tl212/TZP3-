@@ -92,6 +92,8 @@ To get the lower rank approximation, I take these matrices and keep only the top
 
 Click on the link for our repository. 
 
+Hybrid recommenders use both user-item interaction data and their contextual information. In this stage, we propose hybrid recommender algorithms by considering the relationship between content features. Our Hybrid System combines Content Based Filtering System utilizing the Bag of Words Model coupled with SciKit-Learn feature extraction using CountVectorizer and Collaborative System utilizing SVD.  This relationship is embedded into the hybrid recommenders to improve their accuracy and speed. 
+
 
 
 
