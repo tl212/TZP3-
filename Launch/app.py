@@ -5,9 +5,17 @@ import numpy as np
 import os
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from flask_sqlalchemy import SQLAlchemy
+
+
 
 
 app = Flask(__name__)
+
+# DATABASE_URL will contain the database connection string:
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '')
+# Connects to the database using the app config
+db = SQLAlchemy(app)
 
 
 @app.route('/')
