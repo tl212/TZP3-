@@ -6,6 +6,9 @@ import os
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from flask_sqlalchemy import SQLAlchemy
+from flask_table import Table, Col
+import joblib
+import tables
 
 
 
